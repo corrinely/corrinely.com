@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corrine Taylor — Writing</title>
+<meta name="description" content="A decidedly human view on technology.">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Corrine Taylor — Writing" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>__STYLE__</style>
+</head>
+<body>
+<main>
+  <div class="container">
+    <div class="site-header">
+      <a class="crest-link" href="https://corrinetaylor.com"><img src="images/crest.png" alt="Corrine Taylor's crest"></a>
+      <p class="site-label">Corrine Taylor &mdash; Writing</p>
+      <h1>A decidedly human view on technology.</h1>
+    </div>
+
+    <div class="post-list" id="post-list">
+__POSTS__
+    </div>
+    <div class="load-more-wrap">
+      <button type="button" class="load-more-btn" id="load-more-btn">Load More</button>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>&copy; 2026 Corrine Taylor</p>
+  <p class="footer-links"><a href="https://corrinetaylor.com">corrinetaylor.com</a> &middot; <a href="https://www.linkedin.com/in/corrinely" target="_blank" rel="noopener">LinkedIn</a> &middot; <a href="feed.xml">RSS</a></p>
+</footer>
+<script>
+(function () {
+  var PAGE_SIZE = 6;
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#post-list .post-row'));
+  var btn = document.getElementById('load-more-btn');
+  var shown = PAGE_SIZE;
+
+  function update() {
+    rows.forEach(function (row, i) {
+      row.style.display = i < shown ? '' : 'none';
+    });
+    btn.style.display = shown >= rows.length ? 'none' : '';
+  }
+
+  if (rows.length <= PAGE_SIZE) {
+    btn.style.display = 'none';
+  } else {
+    update();
+    btn.addEventListener('click', function () {
+      shown += PAGE_SIZE;
+      update();
+    });
+  }
+})();
+</script>
+</body>
+</html>

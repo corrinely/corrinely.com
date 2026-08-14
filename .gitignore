@@ -1,0 +1,4 @@
+output/
+preview_*.png
+__pycache__/
+*.pyc
