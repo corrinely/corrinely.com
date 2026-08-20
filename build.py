@@ -82,6 +82,14 @@ def parse_post(path):
         r'<img loading="lazy"\1>',
         body_html,
     )
+    # Open post-body links in a new tab; rel="noopener noreferrer" is the
+    # standard safety pairing for target="_blank" (avoids the new tab
+    # getting a handle back to this page).
+    body_html = re.sub(
+        r"<a((?:(?!target=)[^>])*)>",
+        r'<a target="_blank" rel="noopener noreferrer"\1>',
+        body_html,
+    )
 
     return {
         "title": title,
