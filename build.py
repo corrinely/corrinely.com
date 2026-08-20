@@ -154,6 +154,14 @@ def main():
     os.makedirs(OUTPUT_DIR)
     shutil.copytree(os.path.join(ROOT, "images"), os.path.join(OUTPUT_DIR, "images"))
 
+    # Unlinked static pages — not part of the posts/RSS pipeline, not
+    # referenced from index.html, but published at corrinely.com/<name>/
+    # for anyone with the direct URL. Add folders here as needed.
+    for static_dir in ["adventures"]:
+        src = os.path.join(ROOT, static_dir)
+        if os.path.isdir(src):
+            shutil.copytree(src, os.path.join(OUTPUT_DIR, static_dir))
+
     posts = load_posts()
 
     # Homepage — compact rows: date · title, with Load More reveal
