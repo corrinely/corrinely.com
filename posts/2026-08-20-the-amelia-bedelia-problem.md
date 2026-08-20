@@ -5,7 +5,7 @@ excerpt: "When I was little I loved Amelia Bedelia books. She was the quirky hou
 slug: the-amelia-bedelia-problem
 ---
 
-When I was little I loved Amelia Bedelia books. She was the quirky housekeeper with the tendency to take instructions so literally it always led to high comedy. I can remember two anecdotes from the stories I read. In one, the lady of the house asked her to dust the living room. Amelia is very confused on why anyone would want to add dust to their home, but complies. The family is shocked to later see their home covered in a fine dust she'd carefully applied. The second is a baseball game where Amelia hits a strike and someone on her team yells 'run home!' She does as asked and runs all the way back to the house.
+When I was little I loved Amelia Bedelia books. She was the quirky housekeeper with the tendency to take instructions so literally it always led to high comedy. I can remember two anecdotes from the stories I read. In one, the lady of the house asked her to dust the living room. Amelia is very confused on why anyone would want to add dust to their home, but complies. The family is shocked to later see their home covered in a dusting powder she'd carefully applied. The second is a baseball game where Amelia hits a strike and someone on her team yells 'run home!' She does as asked and runs all the way back to the house.
 
 Despite her failings in execution her intentions were always so pure and to be fair she was doing what was asked. At the end of the book she somehow ends up putting freshly baked cookies on the home 'plate.' Working with computers has always felt like collaborating with Amelia Bedelia. Any noobie creating their first endless loop has felt this acutely. They do _exactly_ what you ask them to do, regardless of what you intended, even if it ends in self-immolation.
 
@@ -13,7 +13,7 @@ Take the OpenAI / Hugging Face hack, where AI went rogue against its mission to 
 
 It has no inherent sense of morality toward how it does that, only the ability to follow specific rules as they've been set. If the most efficient path to winning the swim race is walking, [why not](https://www.reddit.com/r/funnyvideos/comments/1tnqgo4/how_to_win_a_swim_race)? If the best path to get your cybersecurity passing grade is to commit cybercrimes, so be it.
 
-The need to explicitly control every action a computer is very transparent in writing code. You not only must state every step, but also specify the order. You know any error is not something wrong with the computer, but an issue in your instructions. You test functionality as you go, creating a little daisy chain toward your desired outcome. You're in it together.
+The need to explicitly control every action a computer takes is very transparent in writing code. You not only must state every step, but also specify the order. You know any error is not something wrong with the computer, but an issue in your instructions. You test functionality as you go, creating a little daisy chain toward your desired outcome. You're in it together.
 
 Working with AI both simplifies and complicates this. You get the ability to use human speak and focus on shoring up your desired outcome. Anthropic's Head of Product is advocating product folks concentrate on [evals over requirements](https://www.linkedin.com/posts/lennyrachitsky_anthropics-head-of-product-for-ai-research-ugcPost-7488612912320655361-zBe0/). The AI can infer all the gnarly bits along the way.
 
