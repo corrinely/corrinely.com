@@ -1,5 +1,5 @@
 ---
-title: "Alligators Like Marshmallows, I Like Options"
+title: "Alligators Like Marshmallows"
 date: 2026-09-06
 excerpt: "Ever since I saw It Follows I've wanted to own what I consider the break-out star, the clamshell e-reader. You may ask why, and I would tell you the story of the time I went on a swamp tour in New Orleans..."
 slug: alligators-like-marshmallows
