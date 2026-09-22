@@ -31,12 +31,15 @@ html, body {
 .crest-link { display: inline-block; margin-bottom: 32px; }
 .crest-link img {
   display: block;
-  width: 96px;
-  height: 96px;
+  width: 128px;
+  height: 128px;
   border-radius: 50%;
   border: 2px solid var(--primary);
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .crest-link img { width: 160px; height: 160px; }
 }
 .site-label {
   font-family: 'Hanken Grotesk', sans-serif;
