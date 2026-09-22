@@ -65,7 +65,7 @@ a:hover { color: var(--primary); }
 .post-list { padding-bottom: 8px; }
 .post-row {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 20px;
   padding: 20px 0;
   border-top: 1px solid var(--outline-variant);
@@ -74,14 +74,17 @@ a:hover { color: var(--primary); }
 .post-row-date {
   flex: 0 0 auto;
   width: 64px;
+  padding-top: 2px;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--on-surface-variant);
 }
-.post-row-title {
+.post-row-main {
   flex: 1 1 auto;
   min-width: 0;
+}
+.post-row-title {
   font-family: 'Libre Caslon Text', Georgia, serif;
   font-weight: 400;
   font-size: 21px;
@@ -90,15 +93,18 @@ a:hover { color: var(--primary); }
 .post-row-title a {
   color: var(--primary);
   text-decoration: none;
-  display: block;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .post-row-title a:hover { color: var(--secondary); }
+.post-row-subtitle {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--on-surface-variant);
+  margin: 6px 0 0;
+}
 @media (max-width: 520px) {
   .post-row { flex-wrap: wrap; }
-  .post-row-title { order: 1; flex-basis: 100%; white-space: normal; }
+  .post-row-main { order: 1; flex-basis: 100%; }
   .post-row-date { order: 0; }
 }
 

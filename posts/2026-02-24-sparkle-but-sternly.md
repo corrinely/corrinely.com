@@ -1,5 +1,6 @@
 ---
 title: "Sparkle, but Sternly"
+subtitle: "It's okay for AI to be your robot friend."
 date: 2026-02-24
 excerpt: "For my forty-fifth birthday, my dog decided to take me on a trip to the emergency vet clinic. I had made chocolate chip cookies to bring to the office and..."
 slug: sparkle-but-sternly

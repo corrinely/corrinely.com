@@ -1,5 +1,6 @@
 ---
 title: "In Poor Taste"
+subtitle: "Design has been reinforcing a median long before AI."
 date: 2026-02-25
 excerpt: "Maybe I’m uniquely situated as a girl from Alabama who has spent decades in New York, but I can’t help but notice that taste is frequently a code word for..."
 slug: in-poor-taste

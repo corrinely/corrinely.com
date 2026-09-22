@@ -1,5 +1,6 @@
 ---
 title: "Remote Control"
+subtitle: "Mind your business, not employee minutia."
 date: 2026-04-16
 excerpt: "Over the summer I took a little burn-out hiatus to reset and figure out what exactly I’d like to do next. It was fantastic timing. I found myself joining..."
 slug: remote-control

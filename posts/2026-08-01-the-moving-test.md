@@ -1,5 +1,6 @@
 ---
 title: "The Moving Test"
+subtitle: "What we take and what expires."
 date: 2026-08-01
 excerpt: "I have an entire stack of 45s I stumbled on walking down Fifth Avenue (Brooklyn) last week. When I’ve had time, I listen to one or two and imagine what..."
 slug: the-moving-test

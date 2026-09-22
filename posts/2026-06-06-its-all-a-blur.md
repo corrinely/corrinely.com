@@ -1,5 +1,6 @@
 ---
 title: "It's All a Blur"
+subtitle: "Keeping it unreal at work."
 date: 2026-06-06
 excerpt: "My grandmother used to have a parakeet named ‘Blue Boy.’ Whenever I was on the phone with her and she’d laugh, you’d hear Blue Boy echoing her exact laugh..."
 slug: its-all-a-blur

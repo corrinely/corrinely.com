@@ -1,5 +1,6 @@
 ---
 title: "The Amelia Bedelia Problem"
+subtitle: "The cost of having to specify everything is not nothing."
 date: 2026-08-20
 excerpt: "When I was little I loved Amelia Bedelia books. She was the quirky housekeeper with the tendency to take instructions so literally it always led to high comedy..."
 slug: the-amelia-bedelia-problem

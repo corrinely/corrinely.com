@@ -1,5 +1,6 @@
 ---
 title: "Living La Vida Local"
+subtitle: "The path to prod needs a bus lane for internal tools."
 date: 2026-09-21
 excerpt: "One of my favorite old internet journeys is coming across an Angelfire site where some accountant named Bootsie living in Montgomery solved an Excel issue advanced programmers would give up on..."
 slug: living-la-vida-local

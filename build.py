@@ -6,9 +6,10 @@ Drop a markdown file into posts/ (frontmatter + body), run this script,
 and it regenerates the homepage, every post page, and the RSS feed into output/.
 
 Frontmatter fields:
-  title:   Post title
-  date:    YYYY-MM-DD
-  excerpt: One or two sentences for the homepage listing and RSS/meta description
+  title:    Post title
+  subtitle: One-line descriptor shown under the title on the homepage
+  date:     YYYY-MM-DD
+  excerpt:  One or two sentences for RSS/meta description
   slug:    (optional) URL slug; defaults to a slugified version of the title
 
 Post bodies are Markdown, but raw HTML is allowed inline for anything
@@ -67,6 +68,7 @@ def parse_post(path):
     else:
         date = datetime.datetime.strptime(str(date_val), "%Y-%m-%d").date()
     excerpt = meta.get("excerpt", "")
+    subtitle = meta.get("subtitle", "")
     slug = meta.get("slug") or slugify(title)
     feature_image = meta.get("feature_image")
     feature_image_alt = meta.get("feature_image_alt", title)
@@ -95,6 +97,7 @@ def parse_post(path):
         "title": title,
         "date": date,
         "excerpt": excerpt,
+        "subtitle": subtitle,
         "slug": slug,
         "body_html": body_html,
         "feature_image": feature_image,
@@ -164,12 +167,17 @@ def main():
 
     posts = load_posts()
 
-    # Homepage — compact rows: date · title, with Load More reveal
+    # Homepage — compact rows: date · title · subtitle, with Load More reveal
     post_items = []
     for p in posts:
+        subtitle_html = ""
+        if p["subtitle"]:
+            subtitle_html = f'\n        <p class="post-row-subtitle">{html.escape(p["subtitle"])}</p>'
         post_items.append(f"""      <div class="post-row">
         <span class="post-row-date">{p['date'].strftime('%d %b').upper()}</span>
-        <h2 class="post-row-title"><a href="posts/{p['slug']}/">{html.escape(p['title'])}</a></h2>
+        <div class="post-row-main">
+          <h2 class="post-row-title"><a href="posts/{p['slug']}/">{html.escape(p['title'])}</a></h2>{subtitle_html}
+        </div>
       </div>""")
     index_html = render("index.html", {"POSTS": "\n".join(post_items)})
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:

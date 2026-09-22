@@ -1,5 +1,6 @@
 ---
 title: "Context Gaps & Reindeer Games"
+subtitle: "AI didn't fix office favoritism."
 date: 2026-05-14
 excerpt: "Organizations have run unacknowledged reindeer games around software access for as long as I can remember. Photoshop licenses were expensive, and if you..."
 slug: context-gaps-reindeer-games

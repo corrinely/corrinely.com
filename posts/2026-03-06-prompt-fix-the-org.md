@@ -1,5 +1,6 @@
 ---
 title: "Prompt: Fix the Org"
+subtitle: "Engineering velocity was never the culprit."
 date: 2026-03-06
 excerpt: "Once upon a time, I had a colleague who kept a single post-it stuck to his monitor that read ‘Fix the Org.’ Whenever we hit some bureaucratic roadblock or..."
 slug: prompt-fix-the-org

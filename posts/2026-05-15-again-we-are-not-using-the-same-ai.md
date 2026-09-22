@@ -1,5 +1,6 @@
 ---
 title: "Again, We Are Not Using the Same AI"
+subtitle: "AI, they're just like us!"
 date: 2026-05-15
 excerpt: "I wrote about the disparity in tooling across organizations and disciplines in this post. Today I came across this gem and gave the test the author..."
 slug: again-we-are-not-using-the-same-ai

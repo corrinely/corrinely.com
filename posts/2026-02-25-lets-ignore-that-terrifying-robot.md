@@ -1,5 +1,6 @@
 ---
 title: "Let's Ignore that Terrifying Robot"
+subtitle: "Gemini is going to kill me."
 date: 2026-02-25
 excerpt: "Let's use this terrifying request from Gemini to answer a question – is this all AI generated? No. These are posts I've written myself by hand like an..."
 slug: lets-ignore-that-terrifying-robot
